@@ -10,10 +10,11 @@ print ('Jiya')
 print('10+10=' + str(10+10))
 print(45*45)
 print('45*45='+ str(45*45))
-print ('''Hello World
+print ('''Hello World!
 This is a new language to me
 This is another line.
 I don't know what to type.''')
+print(10* (5/2)* 3/15)
 
 
-#IT WORKED
+#IT WORKED! YAY!!!!!
