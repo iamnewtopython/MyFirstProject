@@ -16,6 +16,8 @@ This is another line.
 I don't know what to type.''')
 print(10* (5/2)* 3/15)
 print('89*89=' + str (89*89))
-
+print ("Hello" "world")
+print ("Hello " + 34)
+print ("Hello " + str(34))
 
 #IT WORKED! YAY!!!!!
