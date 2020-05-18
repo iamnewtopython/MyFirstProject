@@ -52,7 +52,38 @@ Address: {address}
 Zip: {zipcode}
 Age: {age}''')
 
+number1 = int(input("Enter number1"))
+number2 = int(input("Enter number2"))
 
+'''
+Operators"
 
++
+-
+*
+/
+% (Modulus)
+**(Exponent)
+//(Integer Division)
 
+'''
+
+number1 = int(input("Enter number1 "))
+number2 = int(input("Enter number2 "))
+
+print(f'Result of {number1} + {number2} = {number1 + number2}')
+print(f'Result of {number1} - {number2} = {number1 - number2}')
+print(f'Result of {number1} * {number2} = {number1 * number2}')
+print(f'Result of {number1} / {number2} = {number1 / number2}')
+
+# % means modulus (Reminder)
+print(f'Result of {number1} % {number2} = {number1 % number2}')
+
+# ** means Exponent
+print(f'Result of {number1} ** {number2} = {number1 ** number2}')
+
+# // means integer division
+print(f'Result of {number1} // {number2} = {number1 // number2}')
+
+#https://www.w3schools.com/python/python_ref_string.asp
 
