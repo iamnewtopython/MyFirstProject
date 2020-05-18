@@ -1,23 +1,58 @@
-# This is a lesson in print and string.
-print (10 + 10) 
-print (100-56)
-print (10*34)
-print (86/12)
-print(2.5*2)
-print(10+10+10+10)
-print(10* 3/5*2)
-print ('Jiya')
-print('10+10=' + str(10+10))
-print(45*45)
-print('45*45='+ str(45*45))
-print ('''Hello World!
-This is a new language to me
-This is another line.
-I don't know what to type.''')
-print(10* (5/2)* 3/15)
-print('89*89=' + str (89*89))
-print ("Hello" "world")
-print ("Hello " + 34)
-print ("Hello " + str(34))
+#Variables
+x=10
+y=20
 
-#IT WORKED! YAY!!!!!
+print(x+y)
+print(y-x)
+print(y/x)
+print(x*y)
+
+first_name=input('Enter your first name:')
+last_name=input('Enter your last name:')
+print('Your first name is' + first_name + '.' 'Your last name is' + last_name+ '.')
+print('Your full name is...' + first_name + ' '+ last_name)
+
+#fstring
+x=78
+y=16
+print (f'The value of {x} + {y} = {x+y}')
+
+#Data_types
+  #string
+    #x='ad'
+  #Integer/int
+    #a=10
+  #Decimal Float
+    #b=7.2
+  #Boolean
+    #light_bulb_on = True
+
+x='10'
+y="20"
+
+print (int(x)+int(y)) #doesn't work
+print (int(x)+float(y)) #does work
+
+#you can convert and integer to a float, but not a float to an integer. 
+
+a=(input("Enter a number:"))
+b=(input("Enter another number:"))
+a = int(a)
+b=int(b)
+print (f"the sum of {a} + {b} = {a + b}")
+
+firstname=input('Enter your first name')
+lastname=input('Enter your last name')
+address=input('Enter your address')
+zipcode=input('Enter your zipcode')
+birthyear=int(input('Enter your date of birth'))
+age = 2020 - birthyear
+print(f'''Name: {firstname} {lastname}
+Address: {address}
+Zip: {zipcode}
+Age: {age}''')
+
+
+
+
+
