@@ -45,7 +45,7 @@ firstname=input('Enter your first name')
 lastname=input('Enter your last name')
 address=input('Enter your address')
 zipcode=input('Enter your zipcode')
-birthyear=int(input('Enter your date of birth'))
+birthyear=int(input('Enter your year of birth'))
 age = 2020 - birthyear
 print(f'''Name: {firstname} {lastname}
 Address: {address}
@@ -86,4 +86,14 @@ print(f'Result of {number1} ** {number2} = {number1 ** number2}')
 print(f'Result of {number1} // {number2} = {number1 // number2}')
 
 #https://www.w3schools.com/python/python_ref_string.asp
+
+
+#Practice
+import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+
+
+
 
