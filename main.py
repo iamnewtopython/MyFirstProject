@@ -8,6 +8,10 @@ print(x+y)
 print(y-x)
 print(y/x)
 print(x*y)
+print(x//y)
+print(10**20)
+print(10%20)
+
 
 first_name=input('Enter your first name:')
 last_name=input('Enter your last name:')
@@ -90,12 +94,11 @@ print(f'Result of {number1} // {number2} = {number1 // number2}')
 #https://www.w3schools.com/python/python_ref_string.asp
 
 
-#Practice
-import datetime
-now = datetime.datetime.now()
-print ("Current date and time : ")
-print (now.strftime("%Y-%m-%d %H:%M:%S"))
+#Practice 
+x=23
+y=18
 
+number1 = int(input("Enter number 1 "))
+number2 = int(input("Enter number 2 "))
 
-# - Jiya J.
-
+print(f'Result of {number1} ** {number2} = {number1 ** number2}')
