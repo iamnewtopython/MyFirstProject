@@ -1,104 +1,124 @@
-#Variables
-x=10
-y=20
+#Week 3
+#Comparison Operators
 
-print(('10+20='), x+y)
+#> (Greater than)
+#< (Less than)
+#>= (Greater than equal to)
+#<= (Less than equal to)
+#= (Assignment Operator)
+#== (Equal to)
+    #result of operators is always Boolean (True or False)
 
-print(x+y)
-print(y-x)
-print(y/x)
-print(x*y)
-print(x//y)
-print(10**20)
-print(10%20)
+x = 10
+y = 15
+print(x>y)
+print(x<y)
+print(x>=y)
+print(x<=y)
+print(x!=y)
 
+#Logical
+#and
+#or
+#not
 
-first_name=input('Enter your first name:')
-last_name=input('Enter your last name:')
-print('Your first name is' + first_name + '.' 'Your last name is' + last_name+ '.')
-print('Your full name is...' + first_name + ' '+ last_name)
-
-#fstring
-x=78
-y=16
-print (f'The value of {x} + {y} = {x+y}')
-
-#Data_types
-  #string
-    #x='ad'
-  #Integer/int
-    #a=10
-  #Decimal Float
-    #b=7.2
-  #Boolean
-    #light_bulb_on = True
-
-x='10'
-y="20"
-
-print (int(x)+int(y)) #doesn't work
-print (int(x)+float(y)) #does work
-
-#you can convert and integer to a float, but not a float to an integer. 
-
-a=(input("Enter a number:"))
-b=(input("Enter another number:"))
-a = int(a)
-b=int(b)
-print (f"the sum of {a} + {b} = {a + b}")
-
-firstname=input('Enter your first name')
-lastname=input('Enter your last name')
-address=input('Enter your address')
-zipcode=input('Enter your zipcode')
-birthyear=int(input('Enter your year of birth'))
-age = 2020 - birthyear
-print(f'''Name: {firstname} {lastname}
-Address: {address}
-Zip: {zipcode}
-Age: {age}''')
-
-number1 = int(input("Enter number1"))
-number2 = int(input("Enter number2"))
-
-'''
-Operators"
-
-+
--
-*
-/
-% (Modulus)
-**(Exponent)
-//(Integer Division)
-
-'''
-
-number1 = int(input("Enter number1 "))
-number2 = int(input("Enter number2 "))
-
-print(f'Result of {number1} + {number2} = {number1 + number2}')
-print(f'Result of {number1} - {number2} = {number1 - number2}')
-print(f'Result of {number1} * {number2} = {number1 * number2}')
-print(f'Result of {number1} / {number2} = {number1 / number2}')
-
-# % means modulus (Reminder)
-print(f'Result of {number1} % {number2} = {number1 % number2}')
-
-# ** means Exponent
-print(f'Result of {number1} ** {number2} = {number1 ** number2}')
-
-# // means integer division
-print(f'Result of {number1} // {number2} = {number1 // number2}')
-
-#https://www.w3schools.com/python/python_ref_string.asp
+True and True - True
+True and False - False
+False and False - False
+False and True - False
 
 
-#Practice 
-x=23
-y=18
+True or False - True
+True or True - True
+...
 
-number1 = int(input("Enter number 1 "))
-number2 = int(input("Enter number 2 "))
+x = 5 
+x += 1                
+  #same as x = x + 1
+print (x)
 
-print(f'Result of {number1} ** {number2} = {number1 ** number2}')
+# is tests to see if 2 variables are equal or not
+
+# if statement
+# To write code, say if <whichever Logical Operation>:
+
+x = 100
+y = 20
+if x > y: 
+    print (f' {x} is greater than {y}')
+    #Doesn't do anything because computer checked if statement is true or false and it was false so it didn't do anything
+else:
+    print (f' {x} is greater than {y}')
+
+x = int(input("Enter first number: "))
+y = int(input("Enter the second number: "))
+if x>y:
+  print(f'x - y = {x-y}')
+else:
+  print(f'y - x = {y-x}')
+#elif means else if
+
+#Make code for
+  #0-3 : toddler
+  #4-12 : child 
+  #13-17 : teenager
+  #18 and above : adult
+
+age = int(input("What is your child's age? "))
+if 0 < age <= 3:
+  print("toddler")
+elif 3 < age <= 12:
+  print("child")
+elif 12 < age <= 18:
+  print("teenager")
+else:
+  print("adult")
+
+  #code for weight in kg or lambda
+    # formula : <n>  kg * 2.2 pounds
+
+#wt = input('Weight in kg or lb: ')
+#weight = int(input(f'Enter weight in {wt}: '))
+#if wt.lower() == 'kg' :
+ #   print('In kg')
+  #  print (f'Weight in pounds is {weight * 2.2}')
+#elif wt.lower() == 'lb' :
+ # print('In lb')
+  #print(f'Weight in pounds is {weight / 2.2}')
+
+
+my_str = 'Hello World'
+print(my_str[0:5:2])
+  #Skips every other letter
+
+print(len(my_str))  #len means the length of the string
+
+
+for x in my_str:
+  print(x)
+print ('Done')
+
+my_str = 'Hello World!'
+i = 1
+
+for x in range(100):
+  print(x)
+print('Done')
+#range(n) -> 0 - n-1
+#range (x,n,step) start from x goes up to n-1 skips step
+
+#while loop
+
+#while i < 10:
+  #print(i) don't do this otherwise 1 will go on forever
+
+i = 1
+while i <= 100:
+  print (i)
+  i += 23
+print ('Done')
+
+#Make a command to print whether a number is even or odd
+#Print whether a number is divisible by 5
+#print a factorial of n
+#print command to ask if 
