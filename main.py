@@ -119,6 +119,33 @@ while i <= 100:
 print ('Done')
 
 #Make a command to print whether a number is even or odd
+
+num = int(input("Enter a number: "))  
+if (num % 2) == 0:  
+   print("{0} is Even number".format(num))  
+else:  
+   print("{0} is Odd number".format(num))
+
 #Print whether a number is divisible by 5
+
+number = int(input(" Please Enter any Positive Integer : "))
+
+if((number % 5 == 0)):
+ print("Number {0} is Divisible by 5 ".format(number))
+else:
+    print("Number {0} is Not Divisible by 5 ".format(number))
+
 #print a factorial of n
-#print command to ask if 
+
+num = int(input(" Please Enter any Positive Integer : "))
+factorial = 1
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+#print command to ask if you can turn the fan on or off
