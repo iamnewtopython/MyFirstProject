@@ -145,7 +145,21 @@ elif num == 0:
    print("The factorial of 0 is 1")
 else:
    for i in range(1,num + 1):
-       factorial = factorial*i
+       factorial = factorial*i 
    print("The factorial of",num,"is",factorial)
 
 #print command to ask if you can turn the fan on or off
+
+b = "nothing"
+c = "nothing"
+while not(b == "quit"):
+  b = input("Do you want to turn the fan on, off, or quit?: ")
+  if b == "on" or b == "off":
+    if (b == c):
+      print(f"Fan is already {b}")
+    else: 
+      print(f"Fan turned {b}")
+  elif not(b == "quit"):
+    print("Invalid Input. Please Try Again.")
+  c = b
+print("done")
