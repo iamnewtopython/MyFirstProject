@@ -41,7 +41,7 @@ print ('Done')
 
 for x in range(100):
     continue
-print ('Done')  '''
+print ('Done')  
 
 #fibonacci sequence with limited numbers
 
@@ -65,9 +65,27 @@ else:
        nth = n1 + n2
        n1 = n2
        n2 = nth
-       count += 1
+       count += 1'''
 
 #Homework 
   #Write code for Pascal's Triangle
   #ask for max count and show first n prime numbers
-  #Ask for input . . .and say if number is prime or not
+  #Ask for input . . .and say if number is prime or not.
+  
+# taking input from user
+number = int(input("Enter any number: "))
+
+# prime number is always greater than 1
+if number > 1:
+    for i in range(2, number):
+        if (number % i) == 0:
+            print(number, "is not a prime number")
+            break
+    else:
+        print(number, "is a prime number")
+
+# if the entered number is less than or equal to 1
+# then it is not prime number
+else:
+    print(number, "is not a prime number")    
+
